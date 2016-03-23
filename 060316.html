@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>primordial-soup</title>
+  <meta property="og:title" content="PULP.photo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keyword" content="">
+  <link rel="stylesheet" href="c.css">
+  <style>
+  </style>
+</head>
+<body>
+
+<textarea name="hoge" id="hoge" cols="30" rows="10">aaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbb
+
+
+
+cccccccccccccccccccc
+
+
+
+</textarea>
+
+<div id="fuga"></div>
+
+<hr>
+
+<script>
+  var x = document.getElementById('hoge').value;
+  console.log(x.replace(/\n{1,}$/g, ''));
+  document.getElementById('fuga').innerHTML = x.replace(/\n{1,}$/g, '');
+</script>
+
+</body>
+</html>

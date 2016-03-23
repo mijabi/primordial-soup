@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>primordial-soup</title>
+  <meta property="og:title" content="PULP.photo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keyword" content="">
+  <link rel="stylesheet" href="c.css">
+  <style>
+  </style>
+</head>
+<body>
+
+<div class="js-password-toggle">
+  <input type="password" value="enteredpassword" class="js-password-toggle__target" />&emsp;<span class="js-password-toggle__trigger">show password</span>
+</div>
+
+<script src="jquery-1.12.2.min.js"></script>
+<script>
+(function(){
+    $('.js-password-toggle').each(function(){
+      var $t = $(this);
+      $t.find('.js-password-toggle__trigger')
+        .on('touchstart', function(){
+          $t.find('.js-password-toggle__target').prop('type', 'text');
+          return false;
+        })
+        .on('touchend', function(){
+          $t.find('.js-password-toggle__target').prop('type', 'password');
+          return false;
+        });
+    });
+})();
+</script>
+
+</body>
+</html>
